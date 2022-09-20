@@ -1,0 +1,94 @@
+
+{% extends 'base.html' %}
+{% block breadcumb %} Input Nilai Ujian {% endblock %}
+{% block content %}
+<h3>Input Nilai Ujian</h3>
+
+
+<form name="main_form" action="" method="post">
+    <table>
+         <tr>
+            <td>Pilih Mata Kuliah</td>
+            <td>:</td>
+            <td>
+                <select>
+                    <option value="1" >Strategi Pemasaran</option>
+                    <option value="2" >Strategi Bisnis</option>
+                </select>
+            </td>
+        </tr>
+		<tr>
+            <td>Semester</td>
+            <td>:</td>
+            <td>
+                Ganjil: <input type="radio" name="semester"/>&nbsp;Genap: <input type="radio" name="semester"/>
+            </td>
+        </tr>
+		 <tr>
+            <td>Tahun Ajaran</td>
+            <td>:</td>
+            <td>
+               <input type="text" nama="tahun_ajaran"/>
+            </td>
+        </tr> 
+		 <tr>
+            <td><button class="button" >Proses</button></td>
+            <td></td>
+            <td>
+              
+            </td>
+        </tr> 
+	</table>
+</form>
+	
+<div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>NPM</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>Bobot (SKS)</th>
+					<th>Nilai Huruf</th>
+                    <th>Nilai Angka</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>12.343.5678</td>
+                    <td>Srujiman</td>
+                    <td>3</td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>                   
+                    <td> <button class="button">Simpan</button></td>                   
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>12.343.5677</td>
+                    <td>Maryani</td>
+                    <td>2</td>
+                    <td><input type="text"/></td>
+                    <td><input type="text"/></td>                   
+                    <td> <button class="button">Simpan</button></td>                     
+                </tr>
+				
+                 <tfoot>
+                  <tr>
+                    <th>No.</th>
+                    <th>NPM</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>Bobot (SKS)</th>
+					<th>Nilai Huruf</th>
+                    <th>Nilai Angka</th>
+                    <th>Aksi</th>
+                  </tr>
+                </tfoot>
+                </tbody>
+              </table>
+<input class="button" type="submit"  name="btn_submit" value="Cetak"/></td>
+ 
+</table>
+{% endblock %}

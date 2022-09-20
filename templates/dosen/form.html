@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% block breadcumb %} Tambah Data Dosen {% endblock %}
+{% block script %} 
+	
+	<script>
+		$(function(){
+			$('#tanggal_lahir').datepicker();
+			
+		});
+	</script>
+{% endblock %}
+
+{% block content %}
+<h3>Tambah Data Dosen</h3>
+
+<form name="main_form" action="" method="post">
+    <table>
+        <tr>
+            <td> NIK</td>
+            <td>:</td>
+            <td>
+                <input type="text" name="nik" />
+            </td>
+        </tr>
+      <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td>
+                <input type="text" name="nama" />
+            </td>
+       </tr>
+	   <tr>
+            <td>Tempat Lahir</td>
+            <td>:</td>
+            <td>
+                <input type="text" name="tempat_lahir" />
+            </td>
+       </tr>
+	    <tr>
+            <td>Tanggal Lahir</td>
+            <td>:</td>
+            <td>
+                <input type="text" id="tanggal_lahir" name="tanggal_lahir" />
+            </td>
+       </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+               Laki-laki: <input type="radio" name="jenis_kelamin"/>&nbsp;Perempuan: <input type="radio" name="jenis_kelamin"/>
+            </td>
+        </tr>       
+		  <tr>
+            <td>Agama</td>
+            <td>:</td>
+            <td>
+              <select>
+				<option value="1">Islam</option>
+				<option value="2">Kristen</option>
+				<option value="3">Katholik</option>
+				<option value="4">Hindu</option>
+				<option value="5">Budha</option>
+				<option value="6">Konghucu</option>
+			  </select>
+            </td>
+        </tr> 
+		<tr>
+            <td>Jabatan Fungsional</td>
+            <td>:</td>
+            <td>
+                <input type="text" name="jabatan_fungsional" />
+            </td>
+		</tr>
+		<tr>
+            <td>Golongan</td>
+            <td>:</td>
+            <td>
+                <input type="text" name="golongan" />
+            </td>
+		</tr>
+        <tr>
+            <td><input class="button" type="submit"  name="btn_submit" value="Submit"/></td>
+            <td></td>
+            <td>
+                <a class="button" href="/dosen/">Batal</a>
+            </td>
+        </tr>
+
+    </table>
+</form>
+{% endblock %}

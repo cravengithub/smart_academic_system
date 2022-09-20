@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block breadcumb %} Biodata Siswa {% endblock %}
+{% block content %}
+<h3>Biodata Siswa</h3>
+{% load static %}
+
+<table style="height: 260px; width: 381px;">
+    <tbody>
+        <tr>
+            <td style="width: 119px;">NPM</td>
+            <td style="width: 14px;">:</td>
+            <td style="width: 228px;">17.34.5674</td>
+        </tr>
+        <tr>
+            <td style="width: 119px;">Nama</td>
+            <td style="width: 14px;">:</td>
+            <td style="width: 228px;">Doni Prasetya</td>
+        </tr>
+        <tr>
+            <td style="width: 119px;">Alamat</td>
+            <td style="width: 14px;">:</td>
+            <td style="width: 228px;">Tamanan, Kota Kediri, Jawa Timur</td>
+        </tr>
+        <tr>
+            <td style="width: 119px;">No Telp.</td>
+            <td style="width: 14px;">:</td>
+            <td style="width: 228px;">08568541242</td>
+        </tr>
+        <tr>
+            <td style="width: 119px;">email</td>
+            <td style="width: 14px;">:</td>
+            <td style="width: 228px;">doni.p@gmail.com</td>
+        </tr>
+        <tr>
+            <td style="width: 119px;">Foto</td>
+            <td style="width: 14px;">:</td>
+            <td style="width: 228px;"><img src="{% static "/foto/siswa.jpg" %}" width="120px" height="120px"/></td>
+        </tr>
+    </tbody>
+</table>
+<a class="button" href="biodata_siswa/edit">Ubah</a>
+{% endblock %}

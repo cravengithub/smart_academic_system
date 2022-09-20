@@ -1,0 +1,66 @@
+
+{% extends 'base.html' %}
+{% block breadcumb %} Daftar Materi Kuliah {% endblock %}
+{% block content %}
+<h3>Daftar Materi Kuliah</h3>
+<!-- Navbar Search -->
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+	<a class="button" href="/materi_kuliah/add">Tambah</a>
+	
+<div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>Mata Kuliah</th>
+                    <th>Semester</th>
+                    <th>Tahun Ajaran</th>
+                    <th>SKS</th>
+                    <th>Materi</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Strategi Pemasaran</td>
+                    <td>Ganjil</td>
+                    <td>2018/2019</td>
+                    <td>3</td>
+                    <td><a href="/materi">Unduh</a></td>
+                   <td>Hapus &nbsp; Edit &nbsp;</td>
+                </tr>
+               <tr>
+                    <td>1.</td>
+                    <td>Strategi Bisnis</td>
+                    <td>Genap</td>
+                    <td>2018/2019</td>
+                    <td>3</td>
+                    <td><a href="/materi">Unduh</a></td>
+                   <td>Hapus &nbsp; Edit &nbsp;</td>
+                </tr>
+                 <tfoot>
+                 <tr>
+                    <th>No.</th>
+                    <th>Mata Kuliah</th>
+                    <th>Semester</th>
+                    <th>Tahun Ajaran</th>
+                    <th>SKS</th>
+                    <th>Materi</th>
+                    <th>Aksi</th>
+                  </tr>
+                  </tr>
+                </tfoot>
+                </tbody>
+              </table>
+{% endblock %}

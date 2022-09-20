@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block breadcumb %} Daftar BST atau Passport {% endblock %}
+{% block content %}
+<h3>Daftar BST atau Passport</h3>
+<a class="button" href="/bst_passport/add">Tambah</a>
+<div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>No. Identitas</th>
+                    <th>Nama</th>
+                    <th>Jenis</th>
+               		<th>Tanggal</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>23874932840932849238</td>
+                    <td>Sudibyo</td>
+                    <td>BST</td>
+					<td>2018-07-20 14:00:24</td>
+                    <td>Hapus &nbsp; <a href="bst_passport/view">Unduh</a>  &nbsp; <a href="bst_passport/view">Tampil</a></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>339493483984938</td>
+                    <td>Sartini</td>
+                    <td>BST</td>
+					<td>2018-07-20 14:00:24</td>
+                    <td>Hapus &nbsp; <a href="bst_passport/view">Unduh</a>  &nbsp; <a href="bst_passport/view">Tampil</a></td>
+                </tr>
+                 <tfoot>
+               <tr>
+                    <th>No.</th>
+                    <th>No. Identitas</th>
+                    <th>Nama</th>
+                    <th>Jenis</th>
+                    <th>Tanggal</th>
+                    <th>Aksi</th>
+                  </tr>
+                </tfoot>
+                </tbody>
+              </table>
+{% endblock %}

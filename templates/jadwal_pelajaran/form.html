@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block breadcumb %} Tambah Jadwal Pelajaran {% endblock %}
+{% block content %}
+<h3>Tambah Jadwal Pelajaran</h3>
+<form name="main_form" action="" method="post">
+    <table>
+        <tr>
+            <td> Mata Pelajaran</td>
+            <td>:</td>
+            <td>
+                <select>
+                    <option value="1" >Etika Bisnis</option>
+                    <option value="2" >Perilaku Bisnis</option>
+                    <option value="3" >Analisis Kondisi</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Dosen/Instruktur</td>
+            <td>:</td>
+            <td>
+                <select>
+                    <option value="1" >Haryanto</option>
+                    <option value="2" >Suryanti</option>
+                    <option value="3" >Mahmudin</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Hari</td>
+            <td>:</td>
+            <td>
+                <select>
+                    <option value="1" >Senin</option>
+                    <option value="2" >Selasa</option>
+                    <option value="3" >Rabu</option>
+                    <option value="4" >Kamis</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Pukul</td>
+            <td>:</td>
+            <td>
+                <input name="pukul" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td>Ruang</td>
+            <td>:</td>
+            <td>
+                <input name="ruang" type="text" />
+            </td>
+        </tr>
+        <tr>
+            <td><input class="button" type="submit"  name="btn_submit" value="Submit"/></td>
+            <td></td>
+            <td>
+                 <a class="button" href="/jadwal_pelajaran/">Batal</a>
+            </td>
+        </tr>
+
+    </table>
+</form>
+{% endblock %}

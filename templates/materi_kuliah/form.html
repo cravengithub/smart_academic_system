@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block breadcumb %} Tambah Materi Kuliah {% endblock %}
+{% block content %}
+<h3>Tambah Materi Kuliah</h3>
+<form name="main_form" action="" method="post">
+    <table>
+         <tr>
+            <td>Pilih Mata Kuliah</td>
+            <td>:</td>
+            <td>
+                <select>
+                    <option value="1" >Strategi Pemasaran</option>
+                    <option value="2" >Strategi Bisnis</option>
+                </select>
+            </td>
+        </tr>
+		<tr>
+            <td>Semester</td>
+            <td>:</td>
+            <td>
+                Ganjil: <input type="radio" name="semester"/>&nbsp;Genap: <input type="radio" name="semester"/>
+            </td>
+        </tr>
+		 <tr>
+            <td>Tahun Ajaran</td>
+            <td>:</td>
+            <td>
+               <input type="text" nama="tahun_ajaran"/>
+            </td>
+        </tr> 
+        <tr>
+            <td>Unggah berkas</td>
+            <td>:</td>
+            <td>
+               <input type="file" nama="main_file"/>
+            </td>
+        </tr> 
+		<tr>
+            <td>Deskripsi</td>
+            <td>:</td>
+            <td>
+               <textarea cols="25" rows="4"></textarea>
+            </td>
+        </tr>       		
+        <tr>
+            <td><input class="button" type="submit"  name="btn_submit" value="Unggah"/></td>
+            <td></td>
+            <td>
+                <a class="button" href="/materi_kuliah/">Batal</a>
+            </td>
+        </tr>
+
+    </table>
+</form>
+{% endblock %}

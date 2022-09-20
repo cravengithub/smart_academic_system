@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block breadcumb %} Tambah Jadwal Pelajaran {% endblock %}
+{% block content %}
+<h3>Tambah Jadwal Pelajaran</h3>
+<form name="main_form" action="" method="post">
+    <table>
+        <tr>
+            <td> NPM</td>
+            <td>:</td>
+            <td>
+                <input type="text" disabled  value="NPM otomatis keluar sesuai pilihan nama mahasiswa"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Pilih nama Mahasiswa</td>
+            <td>:</td>
+            <td>
+                <select>
+                    <option value="1" >Adi</option>
+                    <option value="2" >Susi</option>
+                    <option value="3" >Narji</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Deskripsi Kompetensi</td>
+            <td>:</td>
+            <td>
+               <textarea cols="25" rows="4"></textarea>
+            </td>
+        </tr>       
+        <tr>
+            <td><input class="button" type="submit"  name="btn_submit" value="Submit"/></td>
+            <td></td>
+            <td>
+                <a class="button" href="/kompetensi/">Batal</a>
+            </td>
+        </tr>
+
+    </table>
+</form>
+{% endblock %}

@@ -1,0 +1,89 @@
+
+{% extends 'base.html' %}
+{% block breadcumb %} Pembayaran Mahasiswa {% endblock %}
+{% block content %}
+<h3>Pembayaran Mahasiswa</h3>
+
+
+<form name="main_form" action="" method="post">
+    <table>
+         <tr>
+            <td>Mulai</td>
+            <td>:</td>
+            <td>
+               <input type="text" nama="mulai"/>
+            </td>
+        </tr>
+		<tr>
+            <td>Sampai</td>
+            <td>:</td>
+            <td>
+                 <input type="text" nama="sampai"/>
+            </td>
+        </tr>
+		 
+		 <tr>
+            <td colspan="3"><button  class="button">Cari</button></td>
+            
+        </tr> 
+	</table>
+</form>
+	
+<div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>NPM</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>Keterangan Pembayaran</th>
+                    <th>Jumlah (Rp)</th>
+					<th>Status</th>
+                    <th>Rek Bank</th>
+                    <th>Nama Bank</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>12.343.5678</td>
+                    <td>Srujiman</td>
+                    <td>Pembayaran Semester SPP dan Variabel</td>
+                    <td>1.500.000,-</td>
+                    <td>Terbayar</td>                   
+                    <td>12435435345</td>                   
+                    <td>BCA</td>                   
+                    <td><button class="button">Setujui</button></td>                   
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>12.343.5677</td>
+                    <td>Maryani</td>
+                    <td>Pembayaran Semester SPP dan Variabel</td>
+                    <td>1.500.000,-</td>
+                    <td>Terbayar</td>                   
+                    <td>12435435345</td>                   
+                    <td>BCA</td>                   
+                    <td><button class="button">Setujui</button></td>                      
+                </tr>				
+                 <tfoot>
+                  <tr>
+                    <th>No.</th>
+                    <th>NPM</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>Keterangan Pembayaran</th>
+                    <th>Jumlah</th>
+					<th>Status</th>
+                    <th>Rek Bank</th>
+                    <th>Nama Bank</th>
+                    <th>Aksi</th>
+                  </tr>
+                </tfoot>
+                </tbody>
+              </table>
+<input  class="button" type="submit"  name="btn_submit" value="Cetak"/></td>
+ 
+</table>
+{% endblock %}

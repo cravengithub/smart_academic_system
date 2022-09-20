@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block breadcumb %} Daftar Surat {% endblock %}
+{% block content %}
+<h3>Daftar Surat</h3>
+<a class="button" href="/surat/add">Tulis Baru</a>
+<div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>Subjek Surat</th>
+                    <th>No Surat</th>
+                    <th>Jenis</th>
+                    <th>Tanggal</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Pengumuman Lowongan</td>
+                    <td>78/Pemda/XII/A/BKD</td>
+                    <td>Surat Masuk</td>
+                    <td>2018-07-20 14:00:24</td>
+                    <td>Hapus &nbsp; <a href="surat/view">Unduh</a>  &nbsp; <a href="surat/view">Tampil</a></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Pengumuman Kelulusan</td>
+                    <td>01/NEPTUNE/XII/B</td>
+                    <td>Surat Keluar</td>
+                    <td>2018-07-20 09:05:28</td>
+                    <td>Hapus &nbsp; <a href="surat/view">Unduh</a>  &nbsp; <a href="surat/view">Tampil</a></td>
+                </tr>
+                 <tfoot>
+                  <tr>
+                    <th>No.</th>
+                    <th>Subjek Surat</th>
+                    <th>No Surat</th>
+                    <th>Jenis</th>
+                    <th>Tanggal</th>
+                    <th>Aksi</th>
+                  </tr>
+                </tfoot>
+                </tbody>
+              </table>
+{% endblock %}

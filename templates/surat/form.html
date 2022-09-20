@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block breadcumb %} Tulis Surat {% endblock %}
+{% block script %}
+
+<script>
+    $(document).ready(function () {
+
+        tinymce.init({
+            selector: '#mytextarea'
+        });
+    });;
+
+</script>
+{% endblock %}
+{% block content %}
+<h3>Tulis Surat</h3>
+<form name="main_form" action="" method="post">
+    <table>
+        <tr>
+            <td>Judul Surat</td>
+            <td>:</td>
+            <td>
+                <input type="text" nama="isi_surat" />
+            </td>
+        </tr>
+        <tr>
+            <td>Alamat Email</td>
+            <td>:</td>
+            <td>
+                <input type="text" nama="email" />
+            </td>
+        </tr>
+    </table>
+
+    Isi Surat: <br />
+    <textarea id="mytextarea"></textarea>
+</form>
+<table>
+    <tr>
+        <td><input class="button" type="submit" name="btn_submit" value="Submit" /></td>
+        <td></td>
+        <td>
+            <a class="button" href="/surat">Batal</a>
+        </td>
+    </tr>
+
+</table>
+{% endblock %}
